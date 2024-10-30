@@ -33,3 +33,5 @@ class MovieModelSerializer(serializers.ModelSerializer):
     def validate_title(self, value):
         value = value.upper()
         return value
+    
+    
