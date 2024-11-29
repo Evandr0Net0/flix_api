@@ -52,10 +52,9 @@ class MovieStatsView(views.APIView):
         }
 
         serializer = MovieStatsSerializer(data=movies_stats)
-        # serializer.is_valid(raise_exception=True)
+        serializer.is_valid(raise_exception=True)
 
         return response.Response(
             data=serializer.validated_data,
             status=status.HTTP_200_OK,
         )
-
