@@ -50,3 +50,4 @@ class MovieStatsSerializer(serializers.Serializer):
     total_movies = serializers.IntegerField()
     total_reviews = serializers.IntegerField()
     average_stars = serializers.FloatField()
+    movies_by_genre = serializers.ListField()
